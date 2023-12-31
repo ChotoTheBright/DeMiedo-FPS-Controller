@@ -1,7 +1,7 @@
 # De Miedo Character Controller.
 Based on Q_Move, A Quake-like controller for Godot.* 
 
-(*adapted and updated from Btan's original README)
+(*This README has been adapted and updated from Btan's original)
 
 # Important Notes:
 This is for Godot 3.5, the project has been in development since before the release of 4.x. Unfortunately, it cannot be converted 1 to 1, due to the overhauls of the GDScript Node. If you are interested in this style controller for the latest version of Godot, you will be able to find it under Btan's original Repo. (link below)
