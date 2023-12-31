@@ -4,9 +4,9 @@ Based on Q_Move, A Quake-like controller for Godot.*
 (*adapted and updated from Btan's original README)
 
 # Important Notes:
-  - This is for Godot 3.5, the project has been in development since before the release of 4.x. Unfortunately, it cannot be converted 1 to 1, due to the overhauls of the GDScript Node. If you are interested in this style controller for the latest version of Godot, you will be able to find it under Btan's original Repo. (link below)
+This is for Godot 3.5, the project has been in development since before the release of 4.x. Unfortunately, it cannot be converted 1 to 1, due to the overhauls of the GDScript Node. If you are interested in this style controller for the latest version of Godot, you will be able to find it under Btan's original Repo. (link below)
 
-  - This project is meant to provide Godot developers with a robust character controller that delivers the same level of responsiveness as Quake and Half-Life. It's primarily intended for use with game projects or to be modified, so it's not exactly a tutorial. Just wanted to caveat up front that learning from this won't be as straightforward as say, finding some lessons online. I've done my best to leave as many notes in the code as I can. :)
+This project is meant to provide Godot developers with a robust character controller that delivers the same level of responsiveness as Quake and Half-Life. It's primarily intended for use with game projects or to be modified, so it's not exactly a tutorial. Just wanted to caveat up front that learning from this won't be as straightforward as say, finding some lessons online. I've done my best to leave as many notes in the code as I can. :)
 
 # Features
   - Various functions from Quake source code have been converted into GDScript, such as head-bob and camera movement rolling. 
@@ -33,8 +33,10 @@ Original Repo: https://github.com/Btan2/Q_Move
 
 A generalised description on how the step function works can be found on Btan's website: https://thelowrooms.com/articledir/programming_stepclimbing.php
 
-  - Textures used in this repo are from FREEDOOM (https://freedoom.github.io/)
-  - Sounds are from LibreQuake (https://github.com/MissLavender-LQ/LibreQuake)
-  - Weapon Models are by Kenney (https://www.kenney.nl/)
+Textures used in this repo are from FREEDOOM (https://freedoom.github.io/)
+
+Sounds are from LibreQuake (https://github.com/MissLavender-LQ/LibreQuake)
+
+Weapon Models are by Kenney (https://www.kenney.nl/)
 
 This project is under the GNU v3 license.
