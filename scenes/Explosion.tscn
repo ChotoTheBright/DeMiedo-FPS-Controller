@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/effects/RocketExplosionParticleMat.tres" type="Material" id=1]
+[ext_resource path="res://scripts/weapon scripts/explosion.gd" type="Script" id=2]
+
+[sub_resource type="SphereShape" id=92602]
+radius = 5.0
+
+[sub_resource type="ParticlesMaterial" id=92604]
+emission_shape = 1
+emission_sphere_radius = 3.0
+spread = 180.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 1.0
+color = Color( 1, 1, 1, 0.231373 )
+
+[sub_resource type="QuadMesh" id=92605]
+
+[node name="Explosion" type="Area"]
+collision_layer = 0
+collision_mask = 259
+script = ExtResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 92602 )
+
+[node name="Particles" type="Particles" parent="."]
+material_override = ExtResource( 1 )
+cast_shadow = 0
+emitting = false
+amount = 64
+one_shot = true
+speed_scale = 0.7
+explosiveness = 0.9
+visibility_aabb = AABB( -50, -50, -50, 100, 100, 100 )
+process_material = SubResource( 92604 )
+draw_pass_1 = SubResource( 92605 )
+
+[node name="DeathTimer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+autostart = true
+
+[node name="Explode" type="AudioStreamPlayer3D" parent="."]
+attenuation_filter_db = 0.0

@@ -1,0 +1,14 @@
+[gd_resource type="ParticlesMaterial" load_steps=3 format=2]
+
+[sub_resource type="Curve" id=2]
+_data = [ Vector2( 0, 0 ), 0.0, 2.61364, 0, 0, Vector2( 1, 0 ), -6.44381, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=3]
+curve = SubResource( 2 )
+
+[resource]
+direction = Vector3( 0, 1, 0 )
+initial_velocity = 5.0
+scale = 0.2
+scale_curve = SubResource( 3 )
+color = Color( 0.164706, 0.0196078, 0.0196078, 1 )

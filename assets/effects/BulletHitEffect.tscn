@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/effects/BulletHitEffectParticleMaterial.tres" type="Material" id=1]
+[ext_resource path="res://assets/effects/BulletHitEffectGrayMaterial.tres" type="Material" id=2]
+[ext_resource path="res://assets/effects/BulletParticles.tres" type="Material" id=3]
+[ext_resource path="res://assets/effects/BulletHitEffectMesh.tres" type="QuadMesh" id=4]
+[ext_resource path="res://assets/effects/BulletDecalMesh.tres" type="QuadMesh" id=5]
+
+[node name="BulletHitEffect" type="Spatial"]
+
+[node name="Particles" type="Particles" parent="."]
+transform = Transform( -8.74228e-08, -2, 0, 2, -8.74228e-08, 0, 0, 0, 2, 0, 0, 0 )
+material_override = ExtResource( 2 )
+cast_shadow = 0
+emitting = false
+amount = 12
+one_shot = true
+explosiveness = 1.0
+local_coords = false
+process_material = ExtResource( 3 )
+draw_pass_1 = ExtResource( 4 )
+__meta__ = {
+"_editor_description_": "Orig. Amount was 8"
+}
+
+[node name="BulletDecal" type="MeshInstance" parent="."]
+transform = Transform( 0.1, 0, 0, 0, -4.37114e-09, 0.1, 0, -0.1, -4.37114e-09, 0, 0.005, 0 )
+cast_shadow = 0
+mesh = ExtResource( 5 )
+software_skinning_transform_normals = false
+material/0 = ExtResource( 1 )

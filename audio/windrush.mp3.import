@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/windrush.mp3-9e19add2684c55f492e2ac9df6e4c935.mp3str"
+
+[deps]
+
+source_file="res://audio/windrush.mp3"
+dest_files=[ "res://.import/windrush.mp3-9e19add2684c55f492e2ac9df6e4c935.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

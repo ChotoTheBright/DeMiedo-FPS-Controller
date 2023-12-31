@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/effects/BloodSprayParticles.tres" type="Material" id=1]
+[ext_resource path="res://assets/effects/GibBloodParticleMat.tres" type="Material" id=2]
+
+[sub_resource type="QuadMesh" id=92586]
+
+[node name="BloodSpray" type="Spatial"]
+
+[node name="Particles" type="Particles" parent="."]
+material_override = ExtResource( 2 )
+cast_shadow = 0
+emitting = false
+amount = 32
+one_shot = true
+explosiveness = 0.8
+local_coords = false
+process_material = ExtResource( 1 )
+draw_pass_1 = SubResource( 92586 )
+
+[node name="StartTimer" type="Timer" parent="."]
+wait_time = 0.001
+one_shot = true
+autostart = true
+
+[node name="DestroyTimer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="StartTimer" to="Particles" method="set_emitting" binds= [ true ]]
+[connection signal="timeout" from="DestroyTimer" to="." method="queue_free"]
