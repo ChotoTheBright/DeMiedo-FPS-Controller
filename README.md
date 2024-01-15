@@ -39,4 +39,4 @@ Sounds are from LibreQuake (https://github.com/MissLavender-LQ/LibreQuake)
 
 Weapon Models are by Kenney (https://www.kenney.nl/)
 
-This project is under the GNU v3 license.
+This project is under the GNU GPL v3 license. Any and all credit should be attributed to Btan2. Thanks again for your amazing work!
