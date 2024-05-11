@@ -85,7 +85,8 @@ func _input(_event):
 		jump_press = false
 	
 	if state == GROUNDED and Input.is_action_just_pressed("crouch"):
-		sfx.play_crouch_sound()
+		print("crouch SFX here")
+#		sfx.play_crouch_sound()
 
 	if Input.is_action_pressed("crouch"):
 		crouch_press = true
